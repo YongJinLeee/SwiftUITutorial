@@ -14,6 +14,8 @@
 		B222CF8428BE044100F54E97 /* SwiftUITutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B222CF8328BE044100F54E97 /* SwiftUITutorialTests.swift */; };
 		B222CF8E28BE044100F54E97 /* SwiftUITutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B222CF8D28BE044100F54E97 /* SwiftUITutorialUITests.swift */; };
 		B222CF9028BE044100F54E97 /* SwiftUITutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B222CF8F28BE044100F54E97 /* SwiftUITutorialUITestsLaunchTests.swift */; };
+		B279864D2C803D3200BA1BB5 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B279864C2C803D3200BA1BB5 /* CounterFeature.swift */; };
+		B27986502C80408400BA1BB5 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B279864F2C80408400BA1BB5 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		B222CF8928BE044100F54E97 /* SwiftUITutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUITutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B222CF8D28BE044100F54E97 /* SwiftUITutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialUITests.swift; sourceTree = "<group>"; };
 		B222CF8F28BE044100F54E97 /* SwiftUITutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B279864C2C803D3200BA1BB5 /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B27986502C80408400BA1BB5 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +82,7 @@
 				B222CF8228BE044100F54E97 /* SwiftUITutorialTests */,
 				B222CF8C28BE044100F54E97 /* SwiftUITutorialUITests */,
 				B222CF7028BE044000F54E97 /* Products */,
+				B27986512C8040D900BA1BB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +101,7 @@
 			children = (
 				B222CF7228BE044000F54E97 /* SwiftUITutorialApp.swift */,
 				B222CF7428BE044000F54E97 /* ContentView.swift */,
+				B279864C2C803D3200BA1BB5 /* CounterFeature.swift */,
 				B222CF7628BE044100F54E97 /* Assets.xcassets */,
 				B222CF7828BE044100F54E97 /* Preview Content */,
 			);
@@ -127,6 +133,13 @@
 			path = SwiftUITutorialUITests;
 			sourceTree = "<group>";
 		};
+		B27986512C8040D900BA1BB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +156,9 @@
 			dependencies = (
 			);
 			name = SwiftUITutorial;
+			packageProductDependencies = (
+				B279864F2C80408400BA1BB5 /* ComposableArchitecture */,
+			);
 			productName = SwiftUITutorial;
 			productReference = B222CF6F28BE044000F54E97 /* SwiftUITutorial.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +231,9 @@
 				Base,
 			);
 			mainGroup = B222CF6628BE044000F54E97;
+			packageReferences = (
+				B279864E2C80408400BA1BB5 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = B222CF7028BE044000F54E97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B279864D2C803D3200BA1BB5 /* CounterFeature.swift in Sources */,
 				B222CF7528BE044000F54E97 /* ContentView.swift in Sources */,
 				B222CF7328BE044000F54E97 /* SwiftUITutorialApp.swift in Sources */,
 			);
@@ -417,6 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITutorial/Preview Content\"";
+				DEVELOPMENT_TEAM = Z58NYWGZT6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITutorial/Preview Content\"";
+				DEVELOPMENT_TEAM = Z58NYWGZT6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -577,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B279864E2C80408400BA1BB5 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B279864F2C80408400BA1BB5 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B279864E2C80408400BA1BB5 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B222CF6728BE044000F54E97 /* Project object */;
 }
