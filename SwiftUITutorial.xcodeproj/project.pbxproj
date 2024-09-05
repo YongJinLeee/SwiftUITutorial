@@ -18,6 +18,7 @@
 		B27986502C80408400BA1BB5 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B279864F2C80408400BA1BB5 /* ComposableArchitecture */; };
 		B2DEC5A02C869EF0000A21CF /* CounterFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DEC59F2C869EF0000A21CF /* CounterFeatureTests.swift */; };
 		B2DEC5E62C885F94000A21CF /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DEC5E52C885F94000A21CF /* NumberFactClient.swift */; };
+		B2DEC5E82C8950FE000A21CF /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DEC5E72C8950FE000A21CF /* AppFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		B2DEC59D2C857D7D000A21CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B2DEC59F2C869EF0000A21CF /* CounterFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeatureTests.swift; sourceTree = "<group>"; };
 		B2DEC5E52C885F94000A21CF /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
+		B2DEC5E72C8950FE000A21CF /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				B2DEC59D2C857D7D000A21CF /* Info.plist */,
 				B222CF7228BE044000F54E97 /* SwiftUITutorialApp.swift */,
 				B222CF7428BE044000F54E97 /* ContentView.swift */,
+				B2DEC5E72C8950FE000A21CF /* AppFeature.swift */,
 				B279864C2C803D3200BA1BB5 /* CounterFeature.swift */,
 				B2DEC5E52C885F94000A21CF /* NumberFactClient.swift */,
 				B222CF7628BE044100F54E97 /* Assets.xcassets */,
@@ -296,6 +299,7 @@
 				B222CF7528BE044000F54E97 /* ContentView.swift in Sources */,
 				B222CF7328BE044000F54E97 /* SwiftUITutorialApp.swift in Sources */,
 				B2DEC5E62C885F94000A21CF /* NumberFactClient.swift in Sources */,
+				B2DEC5E82C8950FE000A21CF /* AppFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
