@@ -20,6 +20,7 @@
 		B2DEC5E62C885F94000A21CF /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DEC5E52C885F94000A21CF /* NumberFactClient.swift */; };
 		B2DEC5E82C8950FE000A21CF /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DEC5E72C8950FE000A21CF /* AppFeature.swift */; };
 		B2DEC5EA2C8953F1000A21CF /* AppFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DEC5E92C8953F1000A21CF /* AppFeatureTests.swift */; };
+		B2DEC5EC2C8ADCAA000A21CF /* ContactsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DEC5EB2C8ADCAA000A21CF /* ContactsFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		B2DEC5E52C885F94000A21CF /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
 		B2DEC5E72C8950FE000A21CF /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
 		B2DEC5E92C8953F1000A21CF /* AppFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeatureTests.swift; sourceTree = "<group>"; };
+		B2DEC5EB2C8ADCAA000A21CF /* ContactsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				B222CF7228BE044000F54E97 /* SwiftUITutorialApp.swift */,
 				B222CF7428BE044000F54E97 /* ContentView.swift */,
 				B2DEC5E72C8950FE000A21CF /* AppFeature.swift */,
+				B2DEC5EB2C8ADCAA000A21CF /* ContactsFeature.swift */,
 				B279864C2C803D3200BA1BB5 /* CounterFeature.swift */,
 				B2DEC5E52C885F94000A21CF /* NumberFactClient.swift */,
 				B222CF7628BE044100F54E97 /* Assets.xcassets */,
@@ -303,6 +306,7 @@
 				B222CF7328BE044000F54E97 /* SwiftUITutorialApp.swift in Sources */,
 				B2DEC5E62C885F94000A21CF /* NumberFactClient.swift in Sources */,
 				B2DEC5E82C8950FE000A21CF /* AppFeature.swift in Sources */,
+				B2DEC5EC2C8ADCAA000A21CF /* ContactsFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
