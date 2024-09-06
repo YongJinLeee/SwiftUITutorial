@@ -8,25 +8,57 @@
 import SwiftUI
 import ComposableArchitecture
 
-struct AppFeature: View {
-    
-    let store1 = StoreOf<CounterFeature>
-    let store2 = StoreOf<CounterFeature>
+@Reducer
+struct AppFeature {
+
+
+    struct State: Equatable {
+        var tab1 = CounterFeature.State()
+        var tab2 = CounterFeature.State()
+    }
+
+    enum Action {
+        case tab1(CounterFeature.Action)
+        case tab2(CounterFeature.Action)
+    }
+
+    var body: some ReducerOf<Self> {
+        
+        // 부모 리듀서 상속 및 자식 리듀서 실행
+
+        Scope(state: \.tab1, action: \.tab1) {
+            CounterFeature()
+        }
+
+        Scope(state: \.tab2, action: \.tab2) {
+            CounterFeature()
+        }
+
+        Reduce { state, action  in
+
+            return .none
+        }
+    }
+}
+
+struct AppView: View {
+
+    let store: StoreOf<AppFeature>
 
     var body: some View {
         TabView {
-            CounterView(store: store1)
-                .tabItem {
-                    Text("Counter 1")
-                }
+            CounterView(store: store.scope(state: \.tab1, action: \.tab1))
+                .tabItem { Text("Counter 1") }
 
-            CounterView(store: store2)
+            CounterView(store: store.scope(state: \.tab2, action: \.tab2))
                 .tabItem { Text("Counter 2") }
         }
-
     }
 }
 
 #Preview {
-    AppFeature()
+    AppView(store: Store(initialState: AppFeature.State(), reducer: {
+        AppFeature()
+    }))
 }
+
