@@ -18,6 +18,10 @@
 		B27986502C80408400BA1BB5 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B279864F2C80408400BA1BB5 /* ComposableArchitecture */; };
 		B2DEC5A02C869EF0000A21CF /* CounterFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DEC59F2C869EF0000A21CF /* CounterFeatureTests.swift */; };
 		B2DEC5E62C885F94000A21CF /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DEC5E52C885F94000A21CF /* NumberFactClient.swift */; };
+		B2DEC5E82C8950FE000A21CF /* AppFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DEC5E72C8950FE000A21CF /* AppFeature.swift */; };
+		B2DEC5EA2C8953F1000A21CF /* AppFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DEC5E92C8953F1000A21CF /* AppFeatureTests.swift */; };
+		B2DEC5EC2C8ADCAA000A21CF /* ContactsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DEC5EB2C8ADCAA000A21CF /* ContactsFeature.swift */; };
+		B2DEC5EE2C8AF44B000A21CF /* AddContactFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DEC5ED2C8AF44B000A21CF /* AddContactFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,10 @@
 		B2DEC59D2C857D7D000A21CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B2DEC59F2C869EF0000A21CF /* CounterFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeatureTests.swift; sourceTree = "<group>"; };
 		B2DEC5E52C885F94000A21CF /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
+		B2DEC5E72C8950FE000A21CF /* AppFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeature.swift; sourceTree = "<group>"; };
+		B2DEC5E92C8953F1000A21CF /* AppFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFeatureTests.swift; sourceTree = "<group>"; };
+		B2DEC5EB2C8ADCAA000A21CF /* ContactsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeature.swift; sourceTree = "<group>"; };
+		B2DEC5ED2C8AF44B000A21CF /* AddContactFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,9 @@
 				B2DEC59D2C857D7D000A21CF /* Info.plist */,
 				B222CF7228BE044000F54E97 /* SwiftUITutorialApp.swift */,
 				B222CF7428BE044000F54E97 /* ContentView.swift */,
+				B2DEC5E72C8950FE000A21CF /* AppFeature.swift */,
+				B2DEC5EB2C8ADCAA000A21CF /* ContactsFeature.swift */,
+				B2DEC5ED2C8AF44B000A21CF /* AddContactFeature.swift */,
 				B279864C2C803D3200BA1BB5 /* CounterFeature.swift */,
 				B2DEC5E52C885F94000A21CF /* NumberFactClient.swift */,
 				B222CF7628BE044100F54E97 /* Assets.xcassets */,
@@ -152,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				B2DEC59F2C869EF0000A21CF /* CounterFeatureTests.swift */,
+				B2DEC5E92C8953F1000A21CF /* AppFeatureTests.swift */,
 			);
 			path = TCATutorialTest;
 			sourceTree = "<group>";
@@ -296,6 +308,9 @@
 				B222CF7528BE044000F54E97 /* ContentView.swift in Sources */,
 				B222CF7328BE044000F54E97 /* SwiftUITutorialApp.swift in Sources */,
 				B2DEC5E62C885F94000A21CF /* NumberFactClient.swift in Sources */,
+				B2DEC5EE2C8AF44B000A21CF /* AddContactFeature.swift in Sources */,
+				B2DEC5E82C8950FE000A21CF /* AppFeature.swift in Sources */,
+				B2DEC5EC2C8ADCAA000A21CF /* ContactsFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +320,7 @@
 			files = (
 				B2DEC5A02C869EF0000A21CF /* CounterFeatureTests.swift in Sources */,
 				B222CF8428BE044100F54E97 /* SwiftUITutorialTests.swift in Sources */,
+				B2DEC5EA2C8953F1000A21CF /* AppFeatureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -437,7 +453,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
