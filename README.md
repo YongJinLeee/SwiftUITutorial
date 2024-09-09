@@ -1,9 +1,9 @@
 # SwiftUITutorial
 Swift UI + TCA 가이드 튜토리얼 학습
 
-https://developer.apple.com/tutorials/swiftui
+SWiftUI 튜토리얼 : https://developer.apple.com/tutorials/swiftui
 
-https://pointfreeco.github.io/swift-composable-architecture/main/tutorials
+TCA 튜토리얼 : https://pointfreeco.github.io/swift-composable-architecture/main/tutorials
 
 -----
 > 
