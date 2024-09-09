@@ -6,6 +6,7 @@
 //
 
 import ComposableArchitecture
+import SwiftUI
 
 @Reducer
 struct AddContactFeature {
@@ -31,11 +32,10 @@ struct AddContactFeature {
                 return .none
 
             case let .setName(name):
-
+                state.contact.name = name
                 return .none
             }
 
         }
     }
-
 }
